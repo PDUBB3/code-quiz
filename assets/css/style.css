@@ -1,6 +1,11 @@
+body {
+  margin: 0;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem;
 }
@@ -10,6 +15,13 @@
 }
 
 .timer {
-font-size: 1.5rem;
+  font-size: 1.5rem;
+}
 
+.start-quiz-container {
+  padding: 0.5rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4rem;
 }
