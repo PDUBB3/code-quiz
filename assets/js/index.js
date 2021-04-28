@@ -129,3 +129,39 @@ const renderForm = () => {
 
   form.addEventListener("submit", onSubmit);
 };
+
+const renderGameOver = () => {
+  const questionContainer = document.getElementById("question-container");
+  questionContainer.remove();
+
+  const div = document.createElement("div");
+  div.setAttribute("class", "game-over-container");
+
+  const h2 = document.createElement("h2");
+  h2.textContent = "GAME OVER!!";
+
+  div.append(h2);
+
+  main.append(div);
+};
+
+const onSubmit = (event) => {
+  event.preventDefault();
+
+  const initialsInput = document.getElementById("initials-input");
+
+  const initials = initialsInput.value;
+
+  const scoreObject = {
+    user: initials,
+    score: timerValue,
+  };
+
+  const highscores = getFromLocalStorage();
+
+  highscores.push(scoreObject);
+
+  localStorage.setItem("highscores", JSON.stringify(highscores));
+
+  window.location.href = "highscores.html";
+};
