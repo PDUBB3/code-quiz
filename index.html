@@ -1,29 +1,34 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style.css" type="text/css">
-  <title>Code Quiz</title>
-</head>
-<body>
-  <header class="header"></header>
-  <div>
-<a href="#">View Highscores</a>
-
-  </div>
-
-
-  <main>
-<div class="start-quiz-container"
-<h1>Code Quiz</h1>
-<div class="info">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, vel nihil ipsa minima deserunt beatae cupiditate ea nisi quia quo culpa perferendis exercitationem aliquam voluptas corrupti cumque corporis commodi nobis.
-</div>
-<div>
-  <button class="btn"> Start Quiz</button>
-</div>
-  </main>
-  <script src="./assets/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <title>Code Quiz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="./highscores.html">View High Scores</a>
+      </div>
+      <div>Time: <span class="timer" id="timer">0</span></div>
+    </header>
+    <main id="quiz-app">
+      <div class="start-quiz-container" id="start-quiz-container">
+        <h1>Code Quiz</h1>
+        <div class="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam
+          et enim quasi sit ducimus sed! Illum facilis dolores doloribus nobis
+          ad sint repudiandae tenetur enim cupiditate. Labore, reprehenderit
+          dignissimos?
+        </div>
+        <div>
+          <button class="btn" id="start-quiz-btn">Start Quiz</button>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
