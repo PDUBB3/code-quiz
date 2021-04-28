@@ -165,3 +165,35 @@ const onSubmit = (event) => {
 
   window.location.href = "highscores.html";
 };
+
+const startTimer = () => {
+  const timerSpan = document.getElementById("timer");
+  timerSpan.textContent = timerValue;
+
+  const callback = () => {
+    // if timer is active and game is still active
+    if (timerValue > 0 && currentQuestionIndex !== questions.length) {
+      timerValue = timerValue - 1;
+      timerSpan.textContent = timerValue;
+    }
+
+    if (currentQuestionIndex === questions.length) {
+      clearInterval(timer);
+      renderForm();
+    }
+
+    if (timerValue <= 0 && currentQuestionIndex !== questions.length) {
+      clearInterval(timer);
+      renderGameOver();
+    }
+  };
+
+  const timer = setInterval(callback, 1000);
+};
+
+// function called when you click on start quiz button
+const startQuiz = () => {
+  startTimer();
+
+  renderQuestion(questions[currentQuestionIndex]);
+};
