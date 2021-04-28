@@ -39,3 +39,14 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
 }
+.question-container {
+  padding: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.question {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
