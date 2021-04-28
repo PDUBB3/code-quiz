@@ -25,3 +25,28 @@ const questions = [
     answer: "Moscow",
   },
 ];
+
+const renderNextQuestion = (event) => {
+  const target = event.target;
+  const currentTarget = event.currentTarget;
+
+  if (target.matches("li")) {
+    const option = target.getAttribute("data-option");
+    const answer = currentTarget.getAttribute("data-answer");
+
+    if (option === answer) {
+      currentQuestionIndex++;
+
+      const questionContainer = document.getElementById("question-container");
+      questionContainer.remove();
+
+      if (currentQuestionIndex < questions.length) {
+        const nextQuestion = questions[currentQuestionIndex];
+
+        renderQuestion(nextQuestion);
+      }
+    } else {
+      timerValue = timerValue - 5;
+    }
+  }
+};
