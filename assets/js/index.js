@@ -26,6 +26,12 @@ const questions = [
   },
 ];
 
+let timerValue = questions.length * 10;
+
+let currentQuestionIndex = 0;
+
+const main = document.getElementById("quiz-app");
+
 const renderNextQuestion = (event) => {
   const target = event.target;
   const currentTarget = event.currentTarget;
