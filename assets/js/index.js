@@ -50,3 +50,45 @@ const renderNextQuestion = (event) => {
     }
   }
 };
+
+// will render the question container for a given question
+const renderQuestion = (question) => {
+  const questionContainer = document.createElement("div");
+  questionContainer.setAttribute("class", "question-container");
+  questionContainer.setAttribute("id", "question-container");
+
+  const questionDiv = document.createElement("div");
+  questionDiv.setAttribute("class", "question");
+  questionDiv.textContent = question.title;
+
+  const ul = document.createElement("ul");
+  ul.setAttribute("class", "answers");
+  ul.setAttribute("data-answer", question.answer);
+
+  const li1 = document.createElement("li");
+  li1.setAttribute("data-option", question.options[0]);
+  li1.textContent = question.options[0];
+
+  const li2 = document.createElement("li");
+  li2.setAttribute("data-option", question.options[1]);
+  li2.textContent = question.options[1];
+
+  const li3 = document.createElement("li");
+  li3.setAttribute("data-option", question.options[2]);
+  li3.textContent = question.options[2];
+
+  const li4 = document.createElement("li");
+  li4.setAttribute("data-option", question.options[3]);
+  li4.textContent = question.options[3];
+
+  ul.append(li1, li2, li3, li4);
+
+  questionContainer.append(questionDiv, ul);
+
+  const startQuizContainer = document.getElementById("start-quiz-container");
+
+  if (startQuizContainer) {
+    startQuizContainer.remove();
+  }
+
+  main.append(questionContainer);
