@@ -92,3 +92,6 @@ const renderQuestion = (question) => {
   }
 
   main.append(questionContainer);
+
+  ul.addEventListener("click", renderNextQuestion);
+};
