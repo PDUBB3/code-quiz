@@ -95,3 +95,34 @@ const renderQuestion = (question) => {
 
   ul.addEventListener("click", renderNextQuestion);
 };
+
+// will render the form on quiz completion
+const renderForm = () => {
+  const formContainer = document.createElement("div");
+  formContainer.setAttribute("class", "form-container");
+
+  const h2 = document.createElement("h2");
+  h2.textContent = "All Done!!";
+
+  const scoreDiv = document.createElement("div");
+  scoreDiv.setAttribute("class", "score");
+  scoreDiv.textContent = `Your score is ${timerValue}`;
+
+  const form = document.createElement("form");
+  form.setAttribute("class", "score-form");
+
+  const label = document.createElement("label");
+  label.textContent = "Enter Initials: ";
+
+  const input = document.createElement("input");
+  input.setAttribute("type", "text");
+  input.setAttribute("id", "initials-input");
+
+  const button = document.createElement("button");
+  button.setAttribute("class", "btn");
+  button.textContent = "Submit";
+
+  form.append(label, input, button);
+  formContainer.append(h2, scoreDiv, form);
+
+  main.append(formContainer);
