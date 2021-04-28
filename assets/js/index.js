@@ -126,3 +126,6 @@ const renderForm = () => {
   formContainer.append(h2, scoreDiv, form);
 
   main.append(formContainer);
+
+  form.addEventListener("submit", onSubmit);
+};
