@@ -197,7 +197,7 @@ const startTimer = () => {
   const timer = setInterval(callback, 1000);
 };
 
-// function called when you click on start quiz button
+// the function called when you click on start quiz button
 const startQuiz = () => {
   startTimer();
 
