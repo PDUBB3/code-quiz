@@ -197,3 +197,7 @@ const startQuiz = () => {
 
   renderQuestion(questions[currentQuestionIndex]);
 };
+
+// add event listener for click event on start quiz button
+const startQuizButton = document.getElementById("start-quiz-btn");
+startQuizButton.addEventListener("click", startQuiz);
