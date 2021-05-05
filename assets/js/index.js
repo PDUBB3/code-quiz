@@ -1,7 +1,7 @@
 const questions = [
   {
     title: "What is the Capitol of New Zealand?",
-    options: ["Wellington ", "Auckland", "Hamilton", "Tauranga"],
+    options: ["Wellington", "Auckland", "Hamilton", "Tauranga"],
     answer: "Wellington",
   },
   {
