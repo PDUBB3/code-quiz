@@ -57,4 +57,26 @@ code .
 
 ![demo](./assets/images/demo.gif)
 
-### Screenshot showing code quiz created
+### Screenshot showing initial page of Quiz
+
+When you first open the quiz the user will see a short introduction to the quiz, with a button to start the game. The timer is located on the top right corner.
+
+![demo](./assets/images/sc1.png)
+
+### Screenshot showing questions page of Quiz
+
+After clicking the start button, the user will see the questions page which shows the different answer choices the user can click on in relation to the question.
+
+![demo](./assets/images/sc2.png)
+
+### Screenshot of end of Quiz
+
+Once the user has completed the questions, they will be shown their score and prompted to enter their initials, so this can be put onto the high score board.
+
+![demo](./assets/images/sf.png)
+
+### Screenshot showing highscores page of Quiz
+
+Once the user has entered their initials, it will be displayed onto the highscore board along with their score.
+
+![demo](./assets/images/shs.png)
