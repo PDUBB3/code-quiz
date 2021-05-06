@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  background-image: url(../images/white-abstract-background_23-2148810113.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .header {
@@ -24,6 +29,8 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 4rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
 }
 
 .info {
@@ -32,7 +39,7 @@ body {
 
 .btn {
   padding: 0.8rem;
-  background-color: coral;
+  background-color: teal;
   border: none;
   border-radius: 0.2rem;
   color: #fff;
