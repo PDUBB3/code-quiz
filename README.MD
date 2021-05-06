@@ -11,7 +11,7 @@
 ## Project Link
 
 Click [here](https://github.com/PDUBB3/code-quiz.git) to view project on Github pages
-Click [here](https://pdubb3.github.io/code-quiz/) to view project on Github Live
+Click [here](https://pdubb3.github.io/code-quiz/) for GIT repo
 
 ## Description
 
