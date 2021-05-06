@@ -15,7 +15,10 @@ Click [here](https://pdubb3.github.io/code-quiz/) for GIT repo
 
 ## Description
 
-As an coding boot camp student, we were tasked to create a timed quiz on Javascript fundamentals that stores high scores so that progress can be compared to my peers.
+In this project, I was tasked to create a timed quiz on Javascript fundamentals that stores high scores so that progress can be compared to my peers on a highscores page.
+
+I had used HTML, CSS and javascript to code this application and creating this quiz.
+The quiz contains 5 questions. Once the user starts the quiz, the timer is automatically initiated and the first question with 5 answer choices appear on the screen. If the user clicks on a correct, they move onto the next question. If they click on a incorrect answer, they will not move onto the next question and 5 second will be deducted from the remaining time for completing the quiz. Once they have completed the quiz, the user can enter their initials onto the scoreboard.
 
 ## What did we do?
 
